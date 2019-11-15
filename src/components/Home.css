@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
-.Body {
-    min-width: 600px;
-}
 
 .Header {
     width: 90%;
@@ -54,7 +51,7 @@
 #DestinyJ {
     width: 450px;
     margin-left: 30%;
-    margin-top: 56px;
+    margin-top: 57px;
 }
 
 
@@ -77,21 +74,36 @@
 
     .Home-BottomContent-Two{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 }
 
+
 @media only screen and (max-width: 1100px){
+    .Home-title{
+        font-size: 55px;
+        margin-left: 160px;
+    }
+
+    .Home-BottomContent-Two{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 950px){
     .Header {
         width: 100%;
     }
+   
     .Home-title{
         margin-top: 10px;
-        margin-left: 140px;
+        margin-left: 140px; 
+     
     }
     .Header {
-        height: 627px;
+        height: 400px;
         margin: 0 auto;
     }
     .HomeContent {
@@ -123,7 +135,9 @@
     }
 
     #DestinyJ {
-        margin-top: 0px;
+        margin-top: -48px;
+        width: 375px;
+        margin-left: 30%;
     }
 
   
@@ -131,11 +145,10 @@
 }
 
 
-
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
     .Home-title{
        margin: 0 auto;
-       padding-left: 30px;
+       padding-left: 100px;
     }
 
     #NavLogo-mini {
@@ -143,10 +156,14 @@
     }
 
     #DestinyJ {
-        margin: 0 auto;
+       margin-top: -38px;
     }
 
-    .Header {
-        height: 617px;
+}
+
+@media only screen and (max-width: 601px){
+    .Body {
+        min-width: 600px;
     }
+
 }

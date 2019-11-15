@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Search from './Images/Search.png';
-import Logo from './Images/Icon.png';
+import Logo from './Images/Icon.jpg';
 import NavMini from './NavMini';
 import './NavBar.css';
 

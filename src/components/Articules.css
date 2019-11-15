@@ -1,14 +1,22 @@
 .Articule-container {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+  
 }
 
 @media only screen and (max-width: 1100px) {
 
     .Articule-container {
-        padding-top: 100px;
-        flex-direction: column;
-       
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .Articule-container {
+        flex-wrap: wrap;
     }
 
 }

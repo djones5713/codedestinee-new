@@ -3,6 +3,7 @@
 .Blog-container {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
 }
 
 .Blog-container-title {
@@ -24,15 +25,35 @@
     }
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1100px){
     .Blog-container-title {
-        width: 780px;
+        width: 798px;
         margin-top: 40px;
     }
+
+    .Blog-container {
+        align-self: auto;
+    }
+   
+    
 }
 
 @media only screen and (max-width: 1000px){
     .Blog-container-title {
         margin-left: 0;
     }
+}
+
+@media only screen and (max-width: 900px){
+    .Blog-container-title {
+        width: 500px;
+        margin-top: 550px;
+        margin-left: 0px;
+    }
+
+    .Blog-container {
+        align-self: auto;
+    }
+   
+    
 }

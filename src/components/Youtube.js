@@ -12,13 +12,15 @@ class Youtube extends Component {
     render(){
         return(
             <div className="Youtube-Container">
-                <a href="https://www.youtube.com/channel/UCw-4IF7l8zVdGuN8V4JTIgw?view_as=subscriber" 
-                    target='_blank' 
-                    className="Youtube-Header"
-                    rel="noopener noreferrer">
-                    <h1  className="Youtube-Title">Youtube</h1>
-                    <h2 className="Youtube-Subtitle">Channel</h2>
-                </a>
+                <div className="Youtube-Content">
+                    <a href="https://www.youtube.com/channel/UCw-4IF7l8zVdGuN8V4JTIgw?view_as=subscriber" 
+                        target='_blank' 
+                        className="Youtube-Header"
+                        rel="noopener noreferrer">
+                        <h1  className="Youtube-Title">Youtube</h1>
+                        <h2 className="Youtube-Subtitle">Channel</h2>
+                    </a>
+                </div>
                 <div className="Youtube-Box">
 
                 </div>

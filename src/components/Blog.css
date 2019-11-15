@@ -9,7 +9,12 @@
 }
 
 .Blog-Content {
+    width: 100%;
     display: flex;
+}
+
+.Blog-Content-Container{
+    width: 30%;
 }
 
 .Blog-Feature-Title{
@@ -27,18 +32,18 @@
     font-family: 'Oswald', sans-serif;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 800px) {
 
     .Blog-Header {
         width: 100%;
 
     } 
 
-    .Blog-Content {
+    /* .Blog-Content {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-    }
+    } */
 
 }
 

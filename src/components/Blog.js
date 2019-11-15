@@ -20,7 +20,7 @@ render(){
                 <div className='Blog-Header'>
                     <div className='Blog-Content'>
                         <FeatureBlogPage/>
-                        <div>
+                        <div className="Blog-Content-Container">
                             <h1 className='Blog-Feature-Title'>Marketing</h1>
                             <h2 className='Blog-Feature-Subtitle'>The Coder With A Brand</h2>
                             <p className="FeatureBlog-tag-description">Guide</p>

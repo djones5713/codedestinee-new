@@ -23,10 +23,10 @@ render(){
             <div className='Header'>
                 <div className='HomeContent'>
                         <div className="Home-HeaderContent">
-                            <div id="NavLogo-mini">
+                            {/* <div id="NavLogo-mini">
                                 <img id="CodeDestinee-mini" src={Logo} alt="Logo" />
                                 <h3 id="LogoName-mini">Code <br/> Destinee</h3>
-                            </div>
+                            </div> */}
                             <h1 className='About-title'>{this.state.title}</h1>
                             <h6 className='About-subtitle'><strong>{this.state.subtitle}</strong></h6>
                         </div>

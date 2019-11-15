@@ -27,9 +27,9 @@
 }
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1100px) {
     .Blog-itemstyle {
-        width: 780px;
+        width: 798px;
     }
 
 }
@@ -37,6 +37,13 @@
 @media only screen and (max-width: 1000px) {
     .Blog-itemstyle {
        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .Blog-itemstyle {
+        width: 500px;
     }
 
 }

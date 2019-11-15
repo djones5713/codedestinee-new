@@ -67,6 +67,7 @@
 
     .About-title{
         margin-left: 160px;
+        z-index: 1;
     }
 
     .Resume {
@@ -76,22 +77,28 @@
    
 @media only screen and (max-width: 1100px){
     #DestinyJ2 {
-        margin-top: -40px;
+        margin-top: 7px;
         margin-left: 30%;
+        width: 500px;
         height: 393px;
+        display: none;
     }
 
-    .About-title{
-        margin-top: 5px;
-        margin-left: 140px;
+    .About-title {
+        margin-left: -120%;
+        /* margin-left: -200px; 
+        font-size: 55px;
+        position: relative; */
     }
+
     .About-subtitle{
         margin-top: 0;
+        margin-left: 0;
     }
 
     .Resume {
-        top: 320px; 
-        right: 20%;  
+        top: 240px; 
+        right: 40%;  
     }
 }
 
