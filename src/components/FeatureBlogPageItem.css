@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
-.FeatureBlog-itemstyle{
+.FeatureBlog-itemstyle {
     background-color: white;
     position: relative;
     width: 80%;
     height: 400px;
     margin-bottom: 50px;
 }
+
 
 .FeatureBlog-img {
     width: 750px;

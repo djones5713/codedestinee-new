@@ -13,7 +13,8 @@
     font-size: 18px;
     font-family:  'Helvetica Neue';
     font-weight: 300;
-    text-align: center;     
+    text-align: center;  
+    min-width: 500px;   
 }
 
 .Image-container {
