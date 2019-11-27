@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
-import Design from './Images/Design.png';
-import Market from './Images/Market.png';
-import Computer from './Images/Computer.png';
-import Bio from './Bio';
-import Projects from './Projects';
-import './AboutBlur.css';
+import './AboutBlur.scss';
+
 
 class AboutBlur extends Component{
     constructor(){
@@ -17,34 +13,74 @@ class AboutBlur extends Component{
 render(){
     return(
         <div>
-            <Bio />
-            <div className='skills'>
+        <div className='skills'>
+        
 
-                <div className='skills-container'>
-                    <img className='skills-img'src={Design} alt="design tools" />
-                    <h3 className='skills-subtitle'>Designer</h3>
-                    <p>Adobe Photoshop</p>
-                    <p>Adobe XD</p>
+
+                <div className="container">
+                    <div className="card">
+                    <div className="card_color" id="color-one">
+                        <h3 className='skills-subtitle' >Software <br/> Engineer</h3>
+                    </div>
+                    
+                        
+                        <div className="card__content">
+                           
+                                <div className="card_info">
+                                   <p> Software engineer is a major passion of mine. While I am a proficient full stack developer, my expertise are in building
+                                        out the user interface on web and mobile applications. </p>
+                                </div>
+                           
+                        </div>
+                    </div>
                 </div>
-                <div className='skills-container'>
-                    <img className='skills-img' src={Computer} alt="coding tools" />
-                    <h3 className='skills-subtitle'>Developer</h3>
-                            <p>ReactJS</p>
-                            <p>JavaScript</p>
-                            <p>Rest API</p>
-                            <p>NodeJS</p>
-                            <p>PostgresSQL</p>
-                            <p>React Native</p>
+
+                <div className="container">
+                    <div className="card">
+                    <div className="card_color" id="color-two">
+                        <h3 className='skills-subtitle'>Application<br/> Design </h3>
+                    </div>
+                    
+                        
+                        <div className="card__content">
+                                <div className="card_info">
+                                   <p>Every website starts with a great web design. Working with tools such as Adobe Photoshop and Adobe XD allows me to create uniquely compelling site surely to grab attention. </p>
+                               </div>
+                           
+                        </div>
+                    </div>
                 </div>
-                <div className='skills-container'> 
-                    <img className='skills-img' src={Market} alt="marketing tools"/>
-                    <h3 className='skills-subtitle'>Marketing</h3>
-                    <p>Search Engine Optimization</p>
-                    <p>Content Creation</p>
+                
+                <div className="container">
+                    <div className="card">
+                    <div className="card_color" id="color-three" >
+                        <h3 className='skills-subtitle' id="3">Technology <br/> & Tools</h3>
+                    </div>
+                    
+                        
+                        <div className="card__content">
+                           
+                                <div className="card_info">
+                                 <p>There are alot of tools on the market to help lanuch applications. Some technologies I use include VisualStudios,
+                                    Postman, Docker, GitHub and Digital Ocean </p>
+
+                                </div>
+                           
+                        </div>
+                    </div>
                 </div>
         
-            </div>
-            <Projects />
+        
+
+
+
+           
+          
+        </div>
+
+        <div className="aboutblur-fill">
+
+        </div>
         </div>
     )
 }

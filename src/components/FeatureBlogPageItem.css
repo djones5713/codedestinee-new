@@ -3,13 +3,13 @@
 .FeatureBlog-itemstyle{
     background-color: white;
     position: relative;
-    width: 70%;
+    width: 80%;
     height: 400px;
     margin-bottom: 50px;
 }
 
 .FeatureBlog-img {
-    width: 100%;
+    width: 750px;
     height: 400px;
 }
 
@@ -41,7 +41,8 @@
     text-transform: uppercase;
     width: 100px;
     text-align: center;
-    margin-top: 143px;
+    margin-top: 100px;
+    margin-left: 10px;
     color: white;
 }
 
@@ -56,11 +57,54 @@
     top: 350px;
 }
 
-.Feature-link:hover {
+.FeatureBlog-link:hover {
     color: #B954F4;
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1150px) {
+
+    .FeatureBlog-img {
+         width: 650px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .FeatureBlog-img {
+         width: 550px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .Blog-Content-Container{
+        display: none;
+    }
+    
+    .FeatureBlog-img {
+        width: 100%;
+   }
+
+   .FeatureBlog-itemstyle{
+         width: 100%;
+
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 601px){
+    .FeatureBlog-img {
+        min-width: 600px;
+    }
+
+    .FeatureBlog-itemstyle{
+        min-width: 600px;
+
+   }
+
 
 }

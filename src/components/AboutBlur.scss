@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+
+.skills-subtitle {
+  font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    margin-top: 0;
+    line-height: 1.2;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+* {
+    box-sizing: border-box;
+ 
+  }
+  
+  .card_color {
+    width: 100%;
+    height: 170px;
+    margin: 0;
+    color: white;
+  }
+  
+  #color-one {
+    background-color: #A480F3;
+  }
+
+  #color-two {
+    background-color: #C980F3;
+  }
+  
+  #color-three {
+    background-color: #8147A2;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 70vh;
+  }
+
+  .card_info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Helvetica Neue';
+  }
+    
+  .card {
+    position: relative;
+    background: white;
+    width: 370px;
+    height: 60vh;
+    color: black;
+    box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
+      0 0 1rem rgba(0,0,0,0.2);
+    overflow: hidden;
+    
+    &__image-container {
+      margin: -2rem -2rem 1rem -2rem;
+    }
+    
+    &__content {
+      margin-top: 10px;
+      opacity: 0;
+      animation: ContentFadeIn .6s 1s forwards;
+
+    }
+    
+    &__svg {
+      position: absolute;
+      left: 0;
+      top: 115px;
+    }
+  }
+  
+  @keyframes LineFadeIn {
+    0% { opacity: 0; d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "); stroke: #fff; }
+    50% { opacity: 1; d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"); stroke: #888BFF; }
+    100% { opacity: 1; d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"); stroke: #545581; }
+  }
+  
+  @keyframes ContentFadeIn {
+    0% { transform: translateY(-1rem); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes ImageFadeIn {
+    0% { transform: translate(-.5rem, -.5rem) scale(1.05); opacity: 0; filter: blur(2px); }
+    50% { opacity: 1; filter: blur(2px); }
+    100% { transform: translateY(0) scale(1.0); opacity: 1; filter: blur(0); }
+  }
+
+
+  .aboutblur-fill{
+    width: 100%;
+    height: 200px;
+    background-color: #B954F4;
+  }
+
+
+  @media only screen and (max-width: 1400px){
+
+    .card {
+     
+      width: 300px;
+    
+    }
+
+   }
+
+@media only screen and (max-width: 1200px){
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container {
+       width: 500px;
+       margin-bottom: 100px;
+    }
+
+    .skills-img {
+        margin-top: 35px;
+    }
+}
+

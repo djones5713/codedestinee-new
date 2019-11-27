@@ -3,6 +3,7 @@
 .Articule-itemstyle{
     margin-right: 30px;
     margin-left: 30px;
+    width: 370px;
     margin-bottom: 100px;
     background-color: white;
 }
@@ -23,9 +24,7 @@
 }
 
 .Articule-blurb{
-    margin: 0;
-    width: 350px; 
-    height: 200px;
+    margin: 0 auto;
     background-color: white;
     font-family:  'Helvetica Neue';
     font-weight: 300;
@@ -36,7 +35,7 @@
 .Articule-link{
     text-decoration: none;
     display: block;
-    margin-top: -50px;
+    padding-bottom: 10px;
     text-align: center;
     font-size: 15px;
     color: black;
@@ -50,6 +49,7 @@
 
 @media only screen and (max-width: 1400px){
     .Articule-itemstyle{
+        width: 300px;
         margin-right: 10px;
         margin-left: 10px;
 
@@ -70,6 +70,10 @@
 }
 
 @media only screen and (max-width: 1200px){
+
+    .Articule-itemstyle{
+        width: 280px;
+    }
 
     .Articule-img{
         width: 280px;

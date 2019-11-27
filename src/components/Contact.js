@@ -15,7 +15,7 @@ class Contact extends Component {
 
 render(){
     return(
-        <div>
+        <div className="Body">
             <NavBar />
             <div  className="Contact-Header">
                 <div className="Contact-Content">

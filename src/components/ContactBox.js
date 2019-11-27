@@ -124,7 +124,7 @@ class ContactBox extends Component {
  
      return (
     
-        <form className="Contact-Box" method='POST'>
+        <form className="Contact-Box Body" method='POST'>
                 <div id="alert"></div>
                 <div className="Contact-Top-Input">
                     <div className="Left">

@@ -17,7 +17,7 @@ render(){
     return(
         <div>
             <NavBar />
-                <div className='Blog-Header'>
+                <div className='Blog-Header Body'>
                     <div className='Blog-Content'>
                         <FeatureBlogPage/>
                         <div className="Blog-Content-Container">
