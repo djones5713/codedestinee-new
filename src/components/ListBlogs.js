@@ -13,7 +13,7 @@ class ListBlogs extends Component {
     }
 
     componentDidMount(){
-        axios.get('/wp-json/wp/v2/articules')
+        axios.get('http://167.172.209.140:80/wp-json/wp/v2/articules')
             .then(res => this.setState({
                 books: res.data,
                 isLoaded: true

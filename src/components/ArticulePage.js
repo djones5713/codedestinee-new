@@ -13,7 +13,7 @@ class ArticulePage extends Component {
     }
   
     componentDidMount(){
-       axios.get('/wp-json/wp/v2/media')
+       axios.get('http://167.172.209.140:80/wp-json/wp/v2/media')
             .then(res => {
                 this.setState({
                     imgInfo: res.data
@@ -22,7 +22,7 @@ class ArticulePage extends Component {
             // console.log(this.state.imgInfo)
             })
             
-       axios.get(`/wp-json/wp/v2/articules/${this.props.match.params.id}`)
+       axios.get(`http://167.172.209.140:80/wp-json/wp/v2/articules/${this.props.match.params.id}`)
             .then( res => {
                 this.setState({
                 book: res.data,

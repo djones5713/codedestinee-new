@@ -14,7 +14,7 @@ class FeatureImageItems extends Component {
 
     componentDidMount(){
         const { featured_media } = this.props.feature;
-        const getImageURL = axios.get(`/wp-json/wp/v2/media/${featured_media}`)
+        const getImageURL = axios.get(`http://167.172.209.140:80/wp-json/wp/v2/media/${featured_media}`)
 
         Promise.all([getImageURL]).then(res => {
           

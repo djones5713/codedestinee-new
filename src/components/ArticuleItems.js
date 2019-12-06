@@ -15,8 +15,8 @@ class ArticuleItems extends Component {
   
     componentDidMount(){
         const { featured_media, author } = this.props.book;
-        const getImageURL = axios.get(`/wp-json/wp/v2/media/${featured_media}`)
-        const getAuthor = axios.get(`/wp-json/wp/v2/users/${author}`);
+        const getImageURL = axios.get(`http://167.172.209.140:80/wp-json/wp/v2/media/${featured_media}`)
+        const getAuthor = axios.get(`http://167.172.209.140:80/wp-json/wp/v2/users/${author}`);
 
         Promise.all([getImageURL, getAuthor]).then(res => {
           

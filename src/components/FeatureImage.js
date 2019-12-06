@@ -12,7 +12,7 @@ class FeatureImage extends Component {
     }
     
     componentDidMount(){
-        axios.get('/wp-json/wp/v2/feature?per_page=1')
+        axios.get('http://167.172.209.140:80/wp-json/wp/v2/feature?per_page=1')
             .then(res => this.setState({
                 features: res.data,
                 isLoading: true

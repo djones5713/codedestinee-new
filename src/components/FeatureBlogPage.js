@@ -15,7 +15,7 @@ class FeatureBlogPage extends Component {
     }
     
     componentDidMount(){
-        axios.get('/wp-json/wp/v2/feature')
+        axios.get('http://167.172.209.140:80/wp-json/wp/v2/feature')
             .then(res => this.setState({
                 features: res.data,
                 isLoading: true

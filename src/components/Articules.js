@@ -13,7 +13,7 @@ class Articules extends Component {
     }
 
     componentDidMount(){
-        axios.get('/wp-json/wp/v2/articules?per_page=3')
+        axios.get('http://167.172.209.140:80/wp-json/wp/v2/articules?per_page=3')
             .then(res => {
                 console.log("MOUNTED")
                 this.setState({
