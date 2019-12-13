@@ -26,7 +26,7 @@ app.get('/api', ( req, res, next ) => {
 })
 
 
-app.post('/api/email', (req, res, next) =>{
+app.post('http://167.172.209.140:4000/api/email', (req, res, next) =>{
     sendGrid.setApiKey( process.env.APIKEY )
 
     const msg = {
